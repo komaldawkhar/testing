@@ -29,15 +29,15 @@ public class VerifyTitle
 		//Check for Internet Explorer browser
 		else if(browserName.equalsIgnoreCase("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "./IEDriverServer.exe");
-           driver = new InternetExplorerDriver();			
+		      System.setProperty("webdriver.ie.driver", "./IEDriverServer.exe");
+                      driver = new InternetExplorerDriver();			
 		}
 		
 		//To load the web page
 		driver.get("http://www.linkedin.com");
 		//Maximize the webpage
 		driver.manage().window().maximize();
-		//For getting title
+		//For getting title of webpage
 		System.out.println("Title: "+driver.getTitle());
 		
 	}
